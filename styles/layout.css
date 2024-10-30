@@ -7,7 +7,8 @@ body {
     grid-template-columns: 33.33% 66.67%;
 
     max-width: 80rem;
-    margin: 1.25rem auto auto 1.25rem;
+    margin: 1.25rem auto 1.25rem;
+    gap: 1.25rem;
     height: 100vh;
     overflow: hidden;    
 }
@@ -37,7 +38,13 @@ main {
     /* Rolagem do formulario */
     overflow: auto;
 
-    /* padding: 2rem; */
+    /* Bg color */
+    background-color: var(--input-base);
+
+    /* Borda shape */
+    border-radius: .75rem;
+
+    padding: 2rem;
 
     & .main-container {
         max-width: 51.25rem;
