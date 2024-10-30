@@ -1,0 +1,46 @@
+body {
+    background-color: var(--shape-background);
+}
+
+#app {
+    display: grid;
+    grid-template-columns: 33.33% 66.67%;
+
+    max-width: 80rem;
+    margin: 1.25rem auto auto 1.25rem;
+    height: 100vh;
+    overflow: hidden;    
+}
+
+aside {
+    /* Aqui virá css de bg */
+    background-color: var(--shape-background);
+
+    /* Borda da imagem */
+    border-radius: .75rem;
+
+    /* Padding do conteúdo */
+    padding: 2rem;
+
+    /* Bg image */
+    background-image: url(../assets/Background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    /* Largura máxima */
+    & .aside-container {
+        max-width: 25rem;
+    }
+}
+
+main {
+    /* Rolagem do formulario */
+    overflow: auto;
+
+    /* padding: 2rem; */
+
+    & .main-container {
+        max-width: 51.25rem;
+        margin: auto;
+    }
+}

@@ -59,5 +59,9 @@
     /* Text color */
     --text-body: #C8CDD0;
     --text-heading: #F9F9f9;
-
 }
+
+body {
+    overflow: hidden;
+}
+
