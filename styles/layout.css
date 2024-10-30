@@ -1,53 +1,26 @@
 body {
     background-color: var(--shape-background);
-}
-
-#app {
     display: grid;
     grid-template-columns: 33.33% 66.67%;
-
-    max-width: 80rem;
-    margin: 1.25rem auto 1.25rem;
-    gap: 1.25rem;
     height: 100vh;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
-aside {
-    /* Aqui virá css de bg */
-    background-color: var(--shape-background);
-
-    /* Borda da imagem */
+#fixed {
+    display: flex;
     border-radius: .75rem;
+    margin: 1.25rem;
 
-    /* Padding do conteúdo */
-    padding: 2rem;
-
-    /* Bg image */
     background-image: url(../assets/Background.jpg);
     background-size: cover;
     background-position: center;
 
-    /* Largura máxima */
-    & .aside-container {
-        max-width: 25rem;
-    }
+    padding-inline: 2rem;
+    padding-block: 32px 552px;
 }
 
-main {
-    /* Rolagem do formulario */
-    overflow: auto;
-
-    /* Bg color */
-    background-color: var(--input-base);
-
-    /* Borda shape */
+#app {
     border-radius: .75rem;
-
-    padding: 2rem;
-
-    & .main-container {
-        max-width: 51.25rem;
-        margin: auto;
-    }
+    margin: 1.25rem;
+    background-color: var(--shape-body);
 }
