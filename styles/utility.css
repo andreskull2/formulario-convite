@@ -25,9 +25,7 @@
 }
 
 /* flex utility  */
-  .flex {
+  .flex-between {
     display: flex;
-  }
-  .flex-1 {
-    flex: 1;
+    justify-content: space-between;
   }

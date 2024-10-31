@@ -41,6 +41,27 @@
                       <label for="name">Titulo</label>
                       <input type="text" name="name" id="name" placeholder="Nome do evento">
                     </fieldset>
+
+                    <div class=" flex-between">
+                        <fieldset>
+                          <label for="data-start">Início</label>
+                          <input type="datetime-local" name="data-start" id="data-start" required>
+                        </fieldset>
+                        <fieldset>
+                          <label for="data-end">Fim</label>
+                          <input type="datetime-local" name="data-end" id="data-end" required>
+                        </fieldset>
+                      </div>
+                      <div class=" flex-between">
+                        <fieldset>
+                          <label for="data-start">Tipo</label>
+                          <input type="radio" name="data-start" id="data-start" required>
+                        </fieldset>
+                        <fieldset>
+                          <label for="link">Local</label>
+                          <input type="text" name="link" id="link" required placeholder="Link ou endereço">
+                        </fieldset>
+                      </div>
                   </div>
             </form>
         </aside>

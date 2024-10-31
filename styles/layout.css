@@ -36,6 +36,8 @@
     }
   
     aside {
+      display: flex;
+      flex-direction: column;
       max-width: 52.50rem;
       margin-right: 1.25rem;
       background-color: var(--shape-body);
@@ -47,7 +49,6 @@
   
       & h2 {
         margin-bottom: 2.5rem;
-        max-width: 100%;
       }
     }
   }
