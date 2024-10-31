@@ -1,16 +1,74 @@
-form {
-    & .about {
-        
-        & .about-image {
-            display: flex;
-            align-items: center;
-            gap: .75rem;
-            margin-bottom: 1.5rem;
+.about {
+    & .about-image {
+        display: flex;
+        gap: .75rem;
+        align-items: center;
+        margin-bottom: 1.62rem;
+    }
 
-            & span {
-                font: var(--text-heading-sm);
-                color: var(--text-heading);
+    & span {
+        font: var(--heading-sm);
+        color: var(--text-heading);
+    }
+}
+
+& fieldset {
+    & label {
+        font: var(body-sm);
+        color: var(--text-body);
+    }
+
+    input,
+    textarea,
+    select {
+        color: var(--text-heading);
+        appearance: none;
+        width: 100%;
+
+        padding-inline: 1rem;
+        padding-block: .81rem;
+        margin-top: .75rem;
+        margin-bottom: 1rem;
+
+        border: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+        background-color: var(--input-base);
+
+        &:hover,
+        &:focus {
+            border: 1px solid var(--brand-light);
+            outline: 1px solid var(--brand-light);
+        }
+    }
+
+    & input[type="datetime-local"] {
+        color: var(--input-placeholder);
+        position: relative;
+        &::-webkit-calendar-picker-indicator {
+            opacity: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../../assets/icons/calendar.svg);
+            background-position: center;
+            background-size: contain;
+            width: 1.25rem;
+            height: 1.25rem;
+            right: 1rem;
+        }
+
+        &:valid {
+            color: var(--text-body);
+        }
+
+        &:hover,
+        &:focus {
+            &::before {
+                background-image: url(../../assets/icons/calendar.svg);
+                background-repeat: no-repeat;
             }
-        } 
+        }
     }
 }
