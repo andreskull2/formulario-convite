@@ -41,24 +41,28 @@
             <legend>Sobre o Evento</legend>
           </div>
 
-          <div class="input-wrapper">
+          <div class="input-wrapper bottom-m16">
             <label for="name">Titulo</label>
             <input type="text" name="name" id="name" placeholder="Nome do evento" required>
+            <div class="error flex">
+              <img src="./assets/icons/circle-alert.svg" alt="">
+              <span>Digite o nome do evento</span>
+            </div>
           </div>
 
-          <div class=" gap-16 flex">
+          <div class=" gap-16 flex bottom-m16">
             <div class="data-wrapper flex-1">
               <label for="data-start">Início</label>
-              <input class="datetime-local" type="datetime-local" name="data-start" id="data-start" required>
+              <input class="datetime-local" type="datetime-local" name="data-start" id="data-start">
             </div>
 
             <div class="data-wrapper flex-1">
               <label for="data-end">Fim</label>
-              <input class="datetime" type="datetime-local" name="data-end" id="data-end" required>
+              <input class="datetime" type="datetime-local" name="data-end" id="data-end">
             </div>
           </div>
 
-          <div class=" radio-wrapper gap-16 flex">
+          <div class=" radio-wrapper gap-16 flex bottom-m16">
             <div class="flex-1">
               <label for="type">Tipo</label>
               <div class="radio-box">
@@ -85,16 +89,66 @@
             
             <div class="data-wrapper flex-1">
               <label for="local">Local</label>
-              <input type="text" name="local" id="local" placeholder="Link ou endereço">
+              <input type="text" name="local" id="local" placeholder="Link ou endereço" required>
             </div>
           </div>
 
           <div class="textarea-wrapper">
             <label for="description">Descrição</label>
-            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" rows="7"></textarea>
+            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" rows="7" required></textarea>
+            <div class="error flex">
+              <img src="./assets/icons/circle-alert.svg" alt="">
+              <span>Digite os detalhes do evento</span>
+            </div>
           </div>
-
         </fieldset>
+
+        <fieldset id="customization"  class="flex flex-column">
+            <div class="about-image">
+              <img src="assets/icons/paintbrush-vertical.svg" width="24" height="24" alt="icone de calendario">
+              <legend>Personalização</legend>
+            </div>
+            <div class="color-wrapper">
+              <label>Cor principal</label>
+              <div class="color-main flex">
+                <div class="brand-light">
+                  <input type="radio" name="color" id="brand-light">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="navy">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="purple">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="fuschia">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="pink">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="danger">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="orange">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="yellow">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="lime">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="green">
+                </div>
+                <div class="brand-light">
+                  <input type="radio" name="color" id="cyan">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+
       </form>
     </aside>
 

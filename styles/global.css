@@ -66,7 +66,9 @@
   
   fieldset {
     border-style: none;
-  }
+    max-width: 35rem;
+    margin-bottom: 3rem;
+}
   
   label {
     color: var(--text-body);

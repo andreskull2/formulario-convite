@@ -1,7 +1,4 @@
-fieldset {
-    max-width: 35rem;
-  }
-  #about {
+#about {
     display: grid;
   
     & input,
@@ -19,7 +16,6 @@ fieldset {
       padding-block: 0.81rem;
   
       margin-top: 0.75rem;
-      margin-bottom: 1rem;
   
       &:hover,
       &:focus {
@@ -105,14 +101,17 @@ fieldset {
       }
   
       svg path {
-        stroke: var(--brand-light);
+        stroke: #0377dd;
       }
     }
   
     & .textarea-wrapper {
       & textarea {
         resize: none;
+        color: var(--text-heading);
+        font: var(--body-sm);
       }
     }  
-    
+  
+  
   }
