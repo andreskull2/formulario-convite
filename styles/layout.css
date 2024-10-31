@@ -1,12 +1,16 @@
-#app {
+body {
     background-color: var(--shape-background);
-    height: 100vh;
+}
 
+#app {
+    height: 100vh;
+   
     overflow: hidden;
 
     display: grid;
-    grid-template-columns: 33.33% 66.67%;
-
+    grid-template-columns: 35.7% 64.3%;
+    
+    
     padding-inline: 1.25rem;
     padding-block: 1.25rem;
     gap: 1.25rem;
@@ -30,8 +34,9 @@ h1 {
 }
 
 p {
+    /* Isso não está funcionando - talvez levar para a utility 
     font: var(--body-md);
-    color: var(--text-heading);
+    color: var(--text-heading);*/
     margin-top: .25rem;
 }
 

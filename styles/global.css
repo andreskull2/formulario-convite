@@ -46,14 +46,14 @@
 
     /* Heading */
     --font-family-heading: "Baloo 2", sans-serif;
-    --heading-md: 700 1.75rem/auto var(--font-family-heading);
-    --heading-sm: 700 1.125rem/auto var(--font-family-heading);
+    --heading-md: 700 1.75rem var(--font-family-heading);
+    --heading-sm: 700 1.12rem var(--font-family-heading);
 
     /* Body */
     --font-family-body: "Open Sans", sans-serif;
-    --body-md: 600 1rem/auto var(--font-family-body);
-    --body-sm: 600 .875rem/auto var(--font-family-body);
-    --body-xs: 600 .75rem/auto var(--font-family-body);
+    --body-md: 600 1rem var(--font-family-body);
+    --body-sm: 600 .87rem var(--font-family-body);
+    --body-xs: 600 .75rem var(--font-family-body);
 }
 
 body {
