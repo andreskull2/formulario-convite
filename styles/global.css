@@ -64,3 +64,11 @@ fieldset {
     border-style: none;
 }
 
+label {
+    color: var(--text-body);
+    font: var(--body-sm);
+  }
+  ::-webkit-input-placeholder{
+    font: var(--body-md);
+    color: var(--input-placeholder)
+  }
