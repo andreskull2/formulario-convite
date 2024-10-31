@@ -41,3 +41,214 @@
   .bottom-m16 {
     margin-bottom: 1rem;
   }
+
+      /* utility class colors */
+      .brand-light {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#59B2FF 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#59B2FF 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .navy {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#6A59FF 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#6A59FF 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .purple {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#B259FF 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#B259FF 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .fuschia {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#FF59F9 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#FF59F9 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .pink {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#FF598B 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#FF598B 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .danger {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#FF5959 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#FF5959 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .orange {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#FF8B59 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#FF8B59 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .yellow {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#FFCD59 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#FFCD59 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .lime {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#E1FF59 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#E1FF59 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .green {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#59FF91 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#59FF91 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
+      .cyan {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-image: radial-gradient(#59FFF9 45%, #2D3136 50% );
+        &:hover,
+        &:focus {
+          background-image: radial-gradient(#59FFF9 45%, #383D42 50% );
+        }
+        & input[type="radio"] {
+          appearance: none;
+          width: 100%;
+          height: 70%;
+          cursor:pointer;
+        }
+        &:has(:checked) {
+          border: 0.15rem solid var(--brand-light);
+        }
+      }
