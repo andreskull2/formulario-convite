@@ -1,75 +1,60 @@
-.about {
-
-    & .about-image {
-      display: flex;
-      gap: 0.75rem;
-      align-items: center;
-      margin-bottom: 1.62rem;
+fieldset {
+    max-width: 35rem;
+  }
+  #about {
+    display: grid;
   
-      & span {
-        font: var(--heading-sm);
-        color: var(--text-heading);
+    & input,
+    & textarea,
+    & select {
+      appearance: none;
+      width: 100%;
+      background-color: var(--input-base);
+  
+      border:1px solid var(--input-stroke);
+      border-radius: 0.5rem;
+  
+      padding-inline: 1rem;
+      padding-block: 0.81rem;
+  
+      margin-top: 0.75rem;
+      margin-bottom: 1rem;
+  
+      &:hover,
+      &:focus {
+        border: 1px solid var(--brand-light);
+        outline: 1px solid var(--brand-light);
+        outline-offset: 0.1px;
       }
+  
     }
   
-    & fieldset {
-      & label {
-        font: var(--body-sm);
-        color: var(--text-body);
+    #data-start,
+    #data-end {
+      position: relative;
+      color: var(--input-placeholder);
+  
+      &:valid {
+        color:  var(--text-heading);
       }
-      input,
-      textarea,
-      select {
-        color: var(--text-heading );
-        appearance: none;
-        width: 100%;
-  
-        padding-inline: 1rem;
-        padding-block: 0.81rem;
-        margin-top: 0.75rem;
-        margin-bottom: 1rem;
-    
-        border: 1px solid var(--input-stroke);
-        border-radius: 0.5rem;
-        background-color: var(--input-base);
-  
-        &:hover,
-        &:focus {
-          border: 1px solid var(--brand-light);
-          outline: 1px solid var(--brand-light);   
-        }
+      
+      &::-webkit-calendar-picker-indicator {
+        opacity: 0;
       }
-      & input[type="datetime-local"] {
-        color: var(--input-placeholder);
-        position: relative;
-        &::-webkit-calendar-picker-indicator {
-          opacity: 0;
-        }
-        &::before {
-          content: "";
-          position: absolute;
-          background-image: url(../../assets/icons/calendar.svg);
-          background-position: center;
-          background-size: contain;
-          width: 1.25rem;
-          height: 1.25rem;
-          right: 1rem;
-          
-        }
   
-        &:valid {
-          color: var(--text-body);
-        }
+      &::before {
+        position: absolute;
+        inset: 0;
+        content: "";
         
-        &:hover,
-        &:focus {
-          &::before {
-            background-image: url(../../assets/icons/hover/calendar.svg);
-            background-repeat: no-repeat;
-          }
-        }
-  
+        background-image: url(../../assets/icons/calendar.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+        left: 80%;
       }
   
     }
+  
+    
   }
