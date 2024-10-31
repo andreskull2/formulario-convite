@@ -1,26 +1,29 @@
-body {
-    background-color: #131516;
-    display: grid;
-    grid-template-columns: 44.8% 55.2%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-#fixed {
-    display: flex;
-    border-radius: 12px;
-    margin: 1.25rem;
-
-    background-image: url(../assets/images/Background.jpg);
-    background-size: cover;
-    background-position: center;
-
-    padding-inline: 32px;
-    padding-block: 32px 552px;
-}
-
 #app {
-    border-radius: 12px;
-    margin: 1.25rem;
-    background-color: #212427;
+    background-color: var(--shape-background);
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 35.7% 64.3%;
+
+    padding-inline: 15rem;
+    padding-block: 1.25rem;
+    gap: 1.25rem;
+
+    & main {
+        display: flex;
+        background-image: url(../assets/images/Background.jpg);
+        background-size: cover;
+        background-position: center;
+
+        border-radius: .75rem;
+
+        padding-inline: 2rem;
+        padding-block: 2rem 34.5rem;
+    }
+
+    aside {
+        background-color: var(--shape-body);
+        border-radius: .75rem;
+    }
+
 }
