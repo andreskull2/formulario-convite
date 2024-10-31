@@ -5,8 +5,8 @@
     display: grid;
     grid-template-columns: 35.7% 64.3%;
 
-    padding-inline: 15rem;
-    padding-block: 1.25rem;
+    padding-inline: 30rem;
+    padding-block: 1.25rem .5rem;
     gap: 1.25rem;
 
     & main {
