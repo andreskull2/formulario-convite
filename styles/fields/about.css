@@ -10,6 +10,7 @@ fieldset {
       appearance: none;
       width: 100%;
       background-color: var(--input-base);
+      color: var(--text-heading);
   
       border:1px solid var(--input-stroke);
       border-radius: 0.5rem;
@@ -55,6 +56,33 @@ fieldset {
       }
   
     }
-  
     
+    & .btn-wrapper {
+  
+      appearance: none;
+      background-color: var(--input-base);
+      color: var(--text-heading);
+  
+      border:1px solid var(--input-stroke);
+      border-radius: 0.5rem;
+  
+  
+      & .buttons {
+        gap: 0.25rem;
+  
+  
+      }
+  
+      & button {
+        width: 100%;
+        border: none;
+        background-color: var(--input-base);
+        color: var(--text-heading);
+      }
+  
+      & span {
+        color: var(--text-heading);
+        font: 0.87rem var(--font-family-body);
+      }
+    }
   }

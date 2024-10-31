@@ -8,7 +8,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <title>Formulario de Convite</title>
 
   <link rel="stylesheet" href="styles/index.css">
@@ -46,11 +46,10 @@
             <input type="text" name="name" id="name" placeholder="Nome do evento" required>
           </div>
 
-          <div class=" flex">
+          <div class=" gap-16 flex">
             <div class="data-wrapper flex-1">
               <label for="data-start">Início</label>
-              <input  class="datetime-local" type="datetime-local" name="data-start" id="data-start" required>
-              <img src="assets/icons/calendar.svg" alt="">
+              <input class="datetime-local" type="datetime-local" name="data-start" id="data-start" required>
             </div>
 
             <div class="data-wrapper flex-1">
@@ -59,30 +58,27 @@
             </div>
           </div>
 
-          <div class="flex">
-            <div class="radio-type flex flex-1">
+          <div class=" gap-16 flex">
+            <div class="btn-wrapper flex-1">
               <label>Tipo</label>
-              <div class="input-radio flex">
-                <input class="radio" type="radio" name="radio" id="presencial">
-                <img src="./assets/icons/building-2.svg" alt="" width="16">
-                <span>Presencial</span>
-                <input class="radio" type="radio" name="radio" id="online">
-                <img src="./assets/icons/video.svg" alt="" width="16">
-                <span>Online</span>
+              <div class="buttons flex flex-1">
+                <button>
+                  <img src="./assets/icons/building-2.svg " width="16" alt="">
+                  <span>Presencial</span>
+                </button>
+                <button>
+                  <img src="./assets/icons/video.svg" width="16" alt="">
+                  <span>Online</span>
+                </button>
               </div>
             </div>
 
-            <div class="input-wrapper flex flex-1">
+            <div class="data-wrapper flex-1">
               <label for="local">Local</label>
-              <input type="url" name="local" id="local">
+              <input type="text" name="local" id="local" placeholder="Link ou endereço">
             </div>
           </div>
 
-          <div class="textaea-wrapper">
-            <label for="description">Descrição</label>
-            <textarea name="descrição" id="description" rows="10"
-              placeholder="Escreva os detalhes do evento"></textarea>
-          </div>
         </fieldset>
       </form>
     </aside>

@@ -34,3 +34,6 @@
   .flex-column {
     flex-direction: column;
   }
+  .gap-16 { 
+    gap: 1rem;
+  }
