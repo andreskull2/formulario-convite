@@ -58,18 +58,18 @@ fieldset {
     }
     
     & .btn-wrapper {
-  
-      appearance: none;
-      background-color: var(--input-base);
-      color: var(--text-heading);
-  
-      border:1px solid var(--input-stroke);
-      border-radius: 0.5rem;
-  
-  
+      
       & .buttons {
         gap: 0.25rem;
+        appearance: none;
+        background-color: var(--input-base);
+        color: var(--text-heading);
+    
+        border:1px solid var(--input-stroke);
+        border-radius: 0.5rem;
+        padding: 4px;
   
+        margin-top: 0.75rem;
   
       }
   
@@ -78,7 +78,28 @@ fieldset {
         border: none;
         background-color: var(--input-base);
         color: var(--text-heading);
-      }
+  
+        border-radius: 4px;
+  
+        padding-block: 10.5px;
+        gap: 8px;
+        &:nth-child(1)
+        &:focus,
+        &:hover {
+          background-color: var(--input-stroke);
+          svg path {
+            stroke: var(--brand-light);
+          }
+        }
+        &:nth-child(2)
+        &:focus,
+        &:hover {
+          background-color: var(--input-stroke);
+          svg path {
+            stroke: var(--brand-light);
+          }
+        }
+      } 
   
       & span {
         color: var(--text-heading);
