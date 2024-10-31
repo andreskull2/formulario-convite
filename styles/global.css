@@ -5,27 +5,6 @@
 }
 
 :root {
-    /* Tipography */
-    /* Logo */
-    --font-family-logo: "Leckerli One", sans-serif;
-    --text-logo: 400 2.5rem/1.5 var(--font-family-logo);
-
-    /* Heading */
-    --font-family-heading: "Baloo 2", sans-serif;
-    --text-heading-md: 700 1.75rem/auto var(--font-family-heading);
-    --text-heading-sm: 700 1.125rem/auto var(--font-family-heading);
-
-    /* Body */
-    --font-family-body: "Open Sans", sans-serif;
-    --text-body-md: 400 1rem/auto var(--font-family-body);
-    --text-body-md-sb: 600 1rem/auto var(--font-family-body);
-    
-    --text-body-sm: 400 .875rem/auto var(--font-family-body);
-    --text-body-sm-sb: 600 .875rem/auto var(--font-family-body);
-
-    --text-body-xs: 400 .75rem/auto var(--font-family-body);
-    --text-body-xs-sb: 600 .75rem/auto var(--font-family-body);
-
     /* Brand color */
     --brand-light: #59B2FF;
     --brand-mid: #3487CF;
@@ -59,9 +38,29 @@
     /* Text color */
     --text-body: #C8CDD0;
     --text-heading: #F9F9f9;
+
+    /* Tipography */
+    /* Logo */
+    --font-family-logo: "Leckerli One", cursive;
+    --text-logo: 500 2.5rem/1.5 var(--font-family-logo);
+
+    /* Heading */
+    --font-family-heading: "Baloo 2", sans-serif;
+    --heading-md: 700 1.75rem/auto var(--font-family-heading);
+    --heading-sm: 700 1.125rem/auto var(--font-family-heading);
+
+    /* Body */
+    --font-family-body: "Open Sans", sans-serif;
+    --body-md: 600 1rem/auto var(--font-family-body);
+    --body-sm: 600 .875rem/auto var(--font-family-body);
+    --body-xs: 600 .75rem/auto var(--font-family-body);
 }
 
 body {
     overflow: hidden;
+}
+
+fieldset {
+    border-style: none;
 }
 

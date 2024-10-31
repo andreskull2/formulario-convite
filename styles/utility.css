@@ -1,0 +1,37 @@
+.text-logo {
+    font: var(--text-logo);
+    color: var(--pink);
+}
+
+.text-heading-md {
+    font: var(--heading-md);
+    color: var(--text-heading);
+}
+
+.text-heading-sm {
+    font: var(--heading-sm);
+    color: var(--text-heading);
+  }
+
+.body-md {
+    font: var(--body-md);
+    color: var(--input-placeholder);
+  }
+
+.body-sm {
+    font: var(--body-sm);
+  }
+  
+.body-xs {
+    font: var(--body-xs);
+  }
+  
+/* flex utility  */
+    .flex {
+      display: flex;
+    }
+    
+    .flex-1 {
+      flex: 1;
+    }
+  
