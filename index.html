@@ -58,8 +58,8 @@
 
                     <!-- Título -->
                     <div class="input-wrapper bottom-m16">
-                        <label for="name">Título</label>
-                        <input type="text" name="name" id="name" placeholder="Nome do evento" required>
+                        <label for="event">Título</label>
+                        <input type="text" name="event" id="event" placeholder="Nome do evento" required>
                         
                         <!-- Mensagem de erro -->
                         <div class="error flex">
@@ -385,19 +385,33 @@
                         <label>Foto de capa</label>
                         <div class="text-drop flex">
                             <div class="drop-wrapper flex">
-                                <input type="file" name="cover-photo" id="cover-photo" accept="image/*">
+                                <input type="file" name="cover-photo" id="cover-photo" accept="image/*" required>
                                 <img src="assets/icons/hover/upload.svg" alt="">
                                 <span>Selecionar</span>
                             </div>
-                            <span id="drop-span">Nenhum arquivo selecionado</span>
+                            <span id="drop-span">Selecione um arquivo</span>
                         </div>
                     </div>
                 </fieldset>
 
+                <fieldset class="contact">
+                    <div class="about-image">
+                        <img src="assets/icons/contact.svg" width="24" height="24" alt="ícone de calendário">
+                        <legend>Dados para contato</legend>
+                    </div>
 
+                    <div class="input-wrapper bottom-m16">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Nome do evento" required>
+
+                        <div class="error flex">
+                            <img src="./assets/icons/circle-alert.svg" alt="">
+                            <span>Digite o nome do evento</span>
+                        </div>
+                    </div>
+                </fieldset>
             </form>
         </aside>
-
   </div>
 </body>
 
