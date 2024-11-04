@@ -90,3 +90,43 @@
       }
     }
   }
+
+  @media (width <= 31.25rem) {
+    & #app {
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      & aside {
+        overflow: initial;
+        gap: 1rem;
+
+        padding-top: 1rem;
+        padding-inline: 1rem;
+        width: 100%;
+
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        background: linear-gradient(#07090B 1%, var(--shape-body) 5%);
+
+        & h2 {
+            margin-top: 2rem;
+        }
+
+        #about {
+            & input,
+            & texttarea, 
+            & select {
+                
+            }
+        }
+      }
+
+      & #fixed {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }

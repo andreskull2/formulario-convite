@@ -91,3 +91,9 @@
     border: 1px solid #393d41;
     border-radius: 50px;
   }
+
+  @media (width <= 31.25rem) {
+    & body {
+        overflow: auto;
+    }
+  }
