@@ -41,5 +41,5 @@
   .term-box input:checked {
     border: 1px solid var(--brand-light);
     border-radius: 4px;
-    background-image: url(/assets/icons/check.svg);
+    background-image: url(../../assets/icons/hover/check.svg);
   }

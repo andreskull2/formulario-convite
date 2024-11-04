@@ -4,7 +4,6 @@
     box-sizing: border-box;
   }
   
-  
   :root {
     /* color picker costumer */
       /* brand color */
@@ -56,8 +55,6 @@
     --body-sm: 600 0.87rem var(--font-family-body);
     --body-xs: 600 0.75rem var(--font-family-body);
   }
-  
-  
   
   body {
     overflow: hidden;

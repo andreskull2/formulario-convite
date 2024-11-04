@@ -9,7 +9,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Formulario de Convite</title>
+  <title>Formulário de Convite</title>
 
   <!-- Estilo CSS -->
   <link rel="stylesheet" href="styles/index.css">
@@ -59,13 +59,13 @@
                     <!-- Título -->
                     <div class="input-wrapper bottom-m16">
                         <label for="event">Título</label>
-                        <input type="text" name="event" id="event" placeholder="Nome do evento" required>
+                        <input type="text" name="event" id="event" placeholder="Nome do evento">
                         
-                        <!-- Mensagem de erro -->
+                        <!-- Mensagem de erro 
                         <div class="error flex">
                             <img src="./assets/icons/circle-alert.svg" alt="">
                             <span>Digite o nome do evento</span>
-                        </div>
+                        </div>-->
                     </div>
 
                     <!-- Datas -->
@@ -149,20 +149,20 @@
                         <!-- Local -->
                         <div class="data-wrapper flex-1">
                             <label for="local">Local</label>
-                            <input type="text" name="local" id="local" placeholder="Link ou endereço" required>
+                            <input type="text" name="local" id="local" placeholder="Link ou endereço">
                         </div>
                     </div>
 
                     <!-- Descrição -->
                     <div class="textarea-wrapper">
                         <label for="description">Descrição</label>
-                        <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" rows="7" required></textarea>
+                        <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" rows="7"></textarea>
                         
-                        <!-- Mensagem de erro -->
+                        <!-- Mensagem de erro 
                         <div class="error flex">
                             <img src="./assets/icons/circle-alert.svg" alt="">
                             <span>Digite os detalhes do evento</span>
-                        </div>
+                        </div> -->
                     </div>
                 </fieldset>
 
@@ -366,9 +366,14 @@
                         </div>
                     </div>
 
+                    <!-- Container para Estilo | Foto de capa-->
                     <div class="switch-drop-wrapper flex">
+
+                        <!-- Estilo -->
                         <div class="switch flex flex-column">
                             <label>Estilo</label>
+
+                            <!-- Switch-->
                             <div class="box-wrapper flex">
                                 <div class="switch-box flex">
                                     <div class="switch-bottom flex">
@@ -380,6 +385,7 @@
                             </div>
                         </div>
 
+                        <!-- Foto de capa -->
                         <div class="photo-cover">
                             <label>Foto de capa</label>
                             <div class="text-drop flex">
@@ -392,8 +398,7 @@
                             </div>
                         </div>
                     </div>
-
-                    
+   
                 </fieldset>
 
                 <fieldset class="contact">
