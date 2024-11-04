@@ -18,7 +18,7 @@ Event invitation desktop website with form for generating personalized invitatio
 <br>
 
 <p align="center">
-  <img alt="registration form project" src="github/cover.jpg" width="100%">
+  <img alt="Pratical challenge" src="github/capa.jpg" width="100%">
 </p>
 
 ## 🚀 Technologies
