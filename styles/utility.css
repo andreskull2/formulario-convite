@@ -34,12 +34,27 @@
   .flex-column {
     flex-direction: column;
   }
+
+  /* grid utility */
+  .grid {
+    display: grid;
+  }
+
+  /* margin and gaps utility */
   .gap-16 { 
     gap: 1rem;
   }
 
+  .gap-8 {
+    gap: .5rem;
+  }
+
   .bottom-m16 {
     margin-bottom: 1rem;
+  }
+
+  .top-m16 {
+    margin-top: 1rem;
   }
 
       /* utility class colors */
@@ -251,4 +266,9 @@
         &:has(:checked) {
           border: 0.15rem solid var(--brand-light);
         }
+      }
+
+      /* utility customization section */
+      .label {
+        color: #FFFFFF;
       }

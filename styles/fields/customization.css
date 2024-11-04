@@ -1,8 +1,4 @@
-.color-wrapper > label {
-    color: #FFFFFF;
-  }
-  .color-main {
-    margin-top: 1rem;
-    justify-content: space-between;
-  
-  }
+#theme-bag {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
