@@ -90,6 +90,7 @@
     height: 24px;
 
     border-radius: 100px;
+    transition: 3s;
 }
 
 #dark, #light {
@@ -99,7 +100,7 @@
 }
 
 #light {
-    display: none;
+    opacity: 0;
 }
 
 input[type="checkbox"] {
@@ -114,11 +115,22 @@ input[type="checkbox"] {
 .switch-box:has(:checked) {
     background-color: var(--brand-light);
 
+    justify-content: end;
+    padding-block: 4px;
+    padding-right: 4px;
+
     & .switch-bottom {
         background-color: var(--text-heading);
+        transition: 3s;
     }
+}
 
+.box-wrapper:has(:checked) {
     & #dark {
         display: none;
+    }
+
+    & #light {
+        opacity: 100%;
     }
 }
