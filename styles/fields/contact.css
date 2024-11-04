@@ -1,21 +1,42 @@
-.contact input {
-    appearance: none;
-    width: 100%;
-    background-color: var(--input-base);
-    color: var(--text-heading);
+.contact {
+    display: grid;
 
-    border: 1px solid var(--input-stroke);
-    border-radius: .5rem;
+    & input,
+    & textarea,
+    & select {
+        appearance: none;
+        width: 100%;
+        background-color: var(--input-base);
+        color: var(--text-heading);
 
-    padding-inline: 1rem;
-    padding-block: .81rem;
+        border: 1px solid var(--input-stroke);
+        border-radius: .5rem;
 
-    margin-top: .75rem;
+        padding-inline: 1rem;
+        padding-block: .81rem;
 
-    &:hover,
-    &:focus {
-        border: 1px solid var(--brand-light);
-        outline: 1px solid var(--brand-light);
-        outline-offset: .1px;
+        margin-top: .75rem;
+
+        &:hover,
+        &:focus {
+            border: 1px solid var(--brand-light);
+            outline: 1px solid var(--brand-light);
+            outline-offset: .1px;
+        }
+    }
+
+    .email-phone-wrapper {
+        display: flex;
+        align-items: center;
+
+        gap: 1rem;
+
+        & #email {
+            flex: 1;
+        }
+
+        & #phone {
+            flex: 1;
+        }
     }
 }
