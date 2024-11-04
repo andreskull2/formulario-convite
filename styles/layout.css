@@ -91,9 +91,10 @@
     }
   }
 
-  @media (width <= 31.25rem) {
+  @media (width <= 31.25em) {
     & #app {
       overflow: auto;
+      overflow-x: hidden;
       display: flex;
       flex-direction: column;
       gap: 0;
@@ -115,13 +116,32 @@
             margin-top: 2rem;
         }
 
-        #about {
-            & input,
-            & texttarea, 
-            & select {
-                
+        & #about {
+            & .dual-input {
+                display: grid;
+                grid-template-columns: 70%;
             }
         }
+
+        & #customization {
+            max-width: 22.5rem;
+            & .flex-wrap {
+              flex-wrap: wrap;
+            }
+          }
+          & .color-main {
+            gap: 1rem;
+          }
+          
+          & #theme-bag {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+          }
+          & .email-phone-wrapper {
+            display: grid;
+            grid-template-columns: 70%;
+          }
+
       }
 
       & #fixed {
