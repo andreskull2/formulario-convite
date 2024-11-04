@@ -379,19 +379,21 @@
                                 <span id="light">Claro</span>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="photo-cover">
-                        <label>Foto de capa</label>
-                        <div class="text-drop flex">
-                            <div class="drop-wrapper flex">
-                                <input type="file" name="cover-photo" id="cover-photo" accept="image/*" required>
-                                <img src="assets/icons/hover/upload.svg" alt="">
-                                <span>Selecionar</span>
+                        <div class="photo-cover">
+                            <label>Foto de capa</label>
+                            <div class="text-drop flex">
+                                <div class="drop-wrapper flex">
+                                    <input type="file" name="cover-photo" id="cover-photo" accept="image/*" required>
+                                    <img src="assets/icons/hover/upload.svg" alt="">
+                                    <span>Selecionar</span>
+                                </div>
+                                <span id="drop-span">Selecione um arquivo</span>
                             </div>
-                            <span id="drop-span">Selecione um arquivo</span>
                         </div>
                     </div>
+
+                    
                 </fieldset>
 
                 <fieldset class="contact">
@@ -402,11 +404,11 @@
 
                     <div class="input-wrapper bottom-m16">
                         <label for="name">Nome</label>
-                        <input type="text" name="name" id="name" placeholder="Nome do evento" required>
+                        <input type="text" name="name" id="name" placeholder="Nome completo" required>
 
                         <div class="error flex">
-                            <img src="./assets/icons/circle-alert.svg" alt="">
-                            <span>Digite o nome do evento</span>
+                            <img src="./assets/icons/circle-alert.svg" width="16" height="16" alt="">
+                            <span>Campo obrigatório</span>
                         </div>
                     </div>
 
@@ -445,6 +447,14 @@
                         </div>
                         <span>Aceito receber atualizações e promoções por SMS</span>
                     </div>
+                </fieldset>
+
+                <fieldset class="submit-wrapper flex">
+                    <button class="flex">
+                        <img src="assets/icons/hover/ticket.svg" alt="">
+                        <span>Gerar convite</span>
+                    </button>
+
                 </fieldset>
             </form>
         </aside>

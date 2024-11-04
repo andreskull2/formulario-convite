@@ -1,0 +1,28 @@
+.submit-wrapper {
+    justify-content: end;
+
+    & button {
+        background-color: var(--brand-dark);
+        border-radius: 8px;
+        border: none;
+
+        align-items: center;
+        gap: .75rem;
+
+        padding-inline: 1.25rem;
+        padding-block: .81rem;
+
+        cursor: pointer;
+
+        & span {
+            font: var(--body-md);
+            color: var(--text-heading);
+        }
+
+        &:hover,
+        &:focus {
+            background-color: rgb(5, 80, 192);
+            outline: 2px solid var(--brand-dark);
+        }
+    }
+}
