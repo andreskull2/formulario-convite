@@ -1,8 +1,40 @@
+#customization {
+    overflow: hidden;
+}
+
 .color-main {
     justify-content: space-between;
+    overflow: hidden;
 }
 
 #theme-bag {
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
+    overflow: hidden;
 }
+
+.theme-box {
+    display: grid;
+    justify-items: center;
+    overflow: unset;
+
+    background-color: var(--shape-button);
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+
+    padding-inline: .25rem;
+    padding-top: .25rem;
+
+    & p {
+        color: var(--text-heading);
+        font: var(--body-xs);
+
+        margin-top: .5rem;
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid #5c5E60;
+    }
+}
+
